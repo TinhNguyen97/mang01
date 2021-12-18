@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 6</title>
+</head>
+<body>
+<script>
+    let num = parseFloat(prompt('Nhập số:'))
+    let mang = [12, 45, 23, -1, 78, 42, -42, 12, 52, 68]
+    let index = -1
+    for (i = 0; i < mang.length; i++) {
+        if (num === mang[i]) {
+            index = i
+        }
+    }
+        if (index == -1) {
+            document.write(num + ' is not in the Array')
+        } else
+            document.write(num + ' is in the Array')
+
+</script>
+</body>
+</html>

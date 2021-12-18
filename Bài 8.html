@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 8</title>
+</head>
+<body>
+<script>
+    let mang1 = [12, 14, 34, 7, 5, 68, 8, 10, 23, 45]
+    let mang2 = []
+    let index = 0
+    let max;
+    const dodaimang = mang1.length
+    for (let i = 0; i < dodaimang; i++) {
+    max = mang1[0]
+        for (let j = 0; j < mang1.length; j++) {
+            if (max <= mang1[j]) {
+                max = mang1[j]
+                index = j
+            }
+        }
+        mang2.push(max)
+        mang1.splice(index, 1)
+    }
+    document.write(mang2)
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 7</title>
+</head>
+<body>
+<script>
+    let num = parseFloat(prompt('Nhập số:'))
+    let mang = [12, 45, 23, -1, 78, 42, -42, 52, 68]
+    let index = -1
+    for (i = 0; i < mang.length; i++) {
+        if (num === mang[i])
+            index = i
+    }
+    mang.splice(index,1);
+    mang.push(0);
+    document.write(mang)
+</script>
+</body>
+</html>
